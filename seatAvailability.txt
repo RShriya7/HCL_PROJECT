@@ -1,0 +1,94 @@
+﻿package com.hcltech.project;
+
+import java.util.Scanner;
+public class Ticket 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		//menu
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter your name:");
+		String name= sc.nextLine();
+		System.out.println("Enter your age:");
+		int age=sc.nextInt();
+		int low=10;
+		int middle=10;
+		int upper=10;
+		//print seat avalability
+		if(low<=0 && middle <=0 && upper<=0)
+		{
+			System.out.println("No seats available!!!");
+		}
+		else
+		{
+			System.out.println("Select your berth preference: L or M or U");
+			String ch=sc.next();
+			switch(ch)
+			{
+				case "L": if(low>0)
+						{
+							System.out.println("Lower berth confirmed");
+							low--;
+						}
+						else if(middle>0)
+						{
+							System.out.println("Middle berth confirmed");
+							middle--;
+						}
+						else
+						{
+							System.out.println("Upper berth confirmed");
+							upper--;
+						}
+				break;
+				
+				case "M" : if(middle >0)
+							{
+								System.out.println("Middle berth confirmed");
+								middle--;
+							}
+							else if(upper>0)
+							{
+								System.out.println("Upper berth confirmed");
+								upper--;
+							}
+							else
+							{
+								System.out.println("Lower berth confirmed");
+								low--;
+							}
+				break;
+				
+				case "U" :if(upper >0)
+							{
+								System.out.println("Upper berth confirmed");
+								upper--;
+							}
+							else if(low>0)
+							{
+								System.out.println("Lower berth confirmed");
+								low--;
+							}
+							else
+							{
+								System.out.println("Middle berth confirmed");
+								middle--;
+							}
+				break;
+				
+				default:System.out.println("Invalid Input");
+				
+				
+			}
+			
+			
+		}
+		sc.close();
+		
+
+	}
+
+}
+
