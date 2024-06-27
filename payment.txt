@@ -1,0 +1,74 @@
+﻿package com.hcltech.project;
+
+import java.util.Scanner;
+public class pay {
+	public static void payment(char ch)//enter the seat booked
+	{
+		
+		Scanner sc= new Scanner(System.in);
+		/*System.out.print("Amount:");
+		int ch=sc.nextInt();
+		System.out.println("Payment Successful!!!");*/
+		
+		switch(ch)
+		{//tell how much to be paid in booking tickets method
+			case 'L':System.out.println("Amount to be paid: Rs.700");
+				 System.out.print("Amount paid by user:");
+				 int ch1=sc.nextInt();
+				 
+				 if(ch1==700)
+				 {
+					 System.out.println("Payment Successful!!");
+				 }
+				 else
+				 {
+					 System.out.println("Payment Unsuccessful!!");
+				 }
+				 
+				 break;
+			case 'M':System.out.println("Amount to be paid: Rs.500");
+		 		 System.out.print("Amount paid by user:");
+		 		 int ch2=sc.nextInt();
+		 
+		 		 if(ch2==500)
+		 		 {
+		 			 System.out.println("Payment Successful!!");
+		 		 }
+		 		 else
+		 		 {
+		 			 System.out.println("Payment Unsuccessful!!");
+		 		 }
+		 
+		 		 break;
+			case 'U':System.out.println("Amount to be paid: Rs.200");
+	 		 System.out.print("Amount paid by user:");
+	 		 int ch3=sc.nextInt();
+	 
+	 		 if(ch3==200)
+	 		 {
+	 			 System.out.println("Payment Successful!!");
+	 		 }
+	 		 else
+	 		 {
+	 			 System.out.println("Payment Unsuccessful!!");
+	 		 }
+	 
+	 		 break;
+	   
+		}
+		sc.close();
+		
+		
+	}
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		payment('L');
+		
+		sc.close();
+	}
+
+}
+
