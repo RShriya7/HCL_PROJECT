@@ -1,0 +1,43 @@
+﻿package com.hcltech.project;
+
+import java.util.InputMismatchException;
+
+/*import java.util.ArrayList;
+import java.util.List;*/
+
+import java.util.Scanner;
+public class Solution
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Scanner scanner =new Scanner(System.in);
+		
+		public static void searchLoc()
+		{
+			System.out.print("Please enter your Location:");
+			try
+			{
+				String loc= scanner.nextLine();
+			}
+			catch(InputMismatchException e)
+			{
+				System.out.println("Please enter the correct Location.");
+			}
+			
+			System.out.println("Please enter your Destination:");
+			try 
+			{
+				String des= scanner.nextLine();
+			}
+			catch(InputMismatchException e)
+			{
+				System.out.println("Please enter correct Destination.");
+			}
+			
+		}
+
+	}
+
+}
