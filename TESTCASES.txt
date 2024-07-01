@@ -1,0 +1,253 @@
+﻿
+** Train Ticket System Menu **
+1.Register into the website
+2.Login into the website
+3.Check seat avaialability
+4.Book seats
+5.Payment
+6.Ticket Details
+7.Cancel booking
+8.Logout
+9.Exit
+Enter your choice: 1
+
+** Registration **
+Enter Username (must be alphabetic):
+Shriya
+Enter password (min 6 characters): Password Creation: 
+1.Minimum length of 8 characters
+2. At least one uppercase
+3. At least one lowercase
+4.At least one special character
+Enter the password:
+Shriya@123
+Enter Email:
+roddashriya@gmail.com
+Registration Successful!!  
+  Please Login.
+
+Enter your choice: 2
+Menu
+1.Loggin in
+2.Register new user
+Enter your choice:
+1
+Logging in...
+Enter Username:
+Shriya
+Enter Password:
+Shriya@
+123
+....LOGIN SUCCESSFULL....
+
+Enter your choice: 3
+Total seats: 100
+Booked seats: 0
+Available seats: 100
+Enter Departure Station (must be alphabetic):
+Chennai
+Enter Destination Station (must be alphabetic):
+Hyderabad
+Please book your tickets
+
+
+Enter your choice: 4
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+G
+Enter the number of General seats:
+1
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+AC
+Enter the number of A/C seats:
+3
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+S
+Enter the number of Sleeper seats:
+3
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+0
+Exit
+7Seat(s) booked successfully from Chennai to Hyderabad.
+
+
+Enter your choice: 5
+Pay the amount :$1600
+1600
+Amount Paid:1600
+ Payment successful.
+
+Enter your choice: 6
+----------------Ticket Details--------------------
+Username: Shriya
+Email: roddashriya@gmail.com
+PNR Number:983-6979233
+Ticket NO:31376
+Your departure:Chennai
+Your destination:Hyderabad
+Number of Tickets booked:7
+Amount Paid:1600
+Booking Date and Time: 2024-07-01 16:31:21
+Estimated Arrival Date and Time: 2024-07-02 07:31:21
+
+
+Enter your choice: 8
+Logged out successfully.
+
+Enter your choice: 9
+Exiting program. Goodbye!
+
+
+
+TESTCASE:2
+
+** Train Ticket System Menu **
+1.Register into the website
+2.Login into the website
+3.Check seat avaialability
+4.Book seats
+5.Payment
+6.Ticket Details
+7.Cancel booking
+8.Logout
+9.Exit
+Enter your choice: 1
+
+** Registration **
+Enter Username (must be alphabetic):
+Shriya
+Enter password (min 6 characters): Password Creation: 
+1.Minimum length of 8 characters
+2. At least one uppercase
+3. At least one lowercase
+4.At least one special character
+Enter the password:
+Shriya@123
+Enter Email:
+roddashriya
+Invalid email format. Please enter a valid email address.
+Enter Email:
+roddashriya@gmail.com
+Registration Successful!!  
+  Please Login.
+
+Enter your choice: 2
+Menu
+1.Loggin in
+2.Register new user
+Enter your choice:
+1
+Logging in...
+Enter Username:
+shriy
+Invalid username
+.....LOGIN AGAIN......
+
+Enter your choice: 2
+Menu
+1.Loggin in
+2.Register new user
+Enter your choice:
+1
+Logging in...
+Enter Username:
+Shriya
+Enter Password:
+shriya234
+Invalid password. Please try again..
+
+Enter your choice: 2
+Menu
+1.Loggin in
+2.Register new user
+Enter your choice:
+1
+Logging in...
+Enter Username:
+Shriya
+Enter Password:
+Shriya@123
+....LOGIN SUCCESSFULL....
+
+Enter your choice: 3
+Total seats: 100
+Booked seats: 0
+Available seats: 100
+Enter Departure Station (must be alphabetic):
+123
+Invalid format. Please enter alphabetic characters only.
+Enter Departure Station (must be alphabetic):
+Chennai
+Enter Destination Station (must be alphabetic):
+2345
+Invalid format. Please enter alphabetic characters only.
+Enter Destination Station (must be alphabetic):
+Hyderabad
+Please book your tickets
+
+Enter your choice: 4
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+1
+Please enter proper input
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+G
+Enter the number of General seats:
+1
+Select your seats:
+ 1.General(G) 
+2.A/C(Ac)
+3.Sleeper(S)
+0
+Exit
+1Seat(s) booked successfully from Chennai to Hyderabad.
+
+Enter your choice: 5
+Pay the amount :$100
+6
+Payment unsuccessful. 
+Please try again!!!
+
+Enter your choice: 5
+Pay the amount :$100
+100
+Amount Paid:100
+ Payment successful.
+
+Enter your choice: 6
+
+----------------Ticket Details--------------------
+Username: Shriya
+Email: roddashriya@gmail.com
+PNR Number:183-5157158
+Ticket NO:22114
+Your departure:Chennai
+Your destination:Hyderabad
+Number of Tickets booked:1
+Amount Paid:100
+Booking Date and Time: 2024-07-01 16:48:24
+Estimated Arrival Date and Time: 2024-07-02 07:48:24
+
+
+Enter your choice: 8
+Logged out successfully.
+
+Enter your choice: 9
+Exiting program. Goodbye!
+
