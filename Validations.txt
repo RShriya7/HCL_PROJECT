@@ -1,0 +1,85 @@
+﻿package com.hcltech.project;
+
+
+
+import java.util.Scanner;
+
+public class validations
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Example usage of isValidphoneno
+        System.out.print("Enter a phone number (10 digits): ");
+        String phoneNumber = scanner.nextLine().trim();
+        if (isValidphoneno(phoneNumber)) {
+            System.out.println("Valid phone number.");
+        } else {
+            System.out.println("Invalid phone number.");
+        }
+        
+        // Example usage of isValidEmail
+        System.out.print("Enter an email address: ");
+        String email = scanner.nextLine().trim();
+        if (isValidEmail(email)) {
+            System.out.println("Valid email address.");
+        } else {
+            System.out.println("Invalid email address.");
+        }
+        
+        // Example usage of isValidPassword
+        System.out.print("Enter a password: ");
+        String password = scanner.nextLine().trim();
+        if (isValidPassword(password)) {
+            System.out.println("Valid password.");
+        } else {
+            System.out.println("Invalid password.");
+        }
+        
+        // Example usage of isValidName
+        System.out.print("Enter a username: ");
+        String username = scanner.nextLine().trim();
+        if (isValidName(username)) {
+            System.out.println("Valid username.");
+        } else {
+            System.out.println("Invalid username.");
+        }
+        
+        scanner.close();
+    }
+    
+    // checking the phone number is valid or not
+    private static boolean isValidphoneno(String phonenumber) {
+        return phonenumber.matches("\\d{10}");
+    }
+
+    // checking the email is valid or not
+    private static boolean isValidEmail(String email) {
+        String regular_form = "^[a-zA-Z0-9_+&-]+(?:\\.[a-zA-Z0-9_+&-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        return email.matches(regular_form);
+    }
+
+    // checking the password is valid or not
+    private static boolean isValidPassword(String password) {
+        if (password.length() < 8) {
+            return false;
+        }
+        if (!password.matches(".*[A-Z].*")) {
+            return false;
+        }
+        if (!password.matches(".*[a-z].*")) {
+            return false;
+        }
+        if (!password.matches(".*[!@#$%^&()-+=\\[\\]{};:'\"\\\\|,.<>/?].*")) {
+            return false;
+        }
+        return true;
+    }
+
+    // checking name is valid or not
+    private static boolean isValidName(String username) {
+        return username.matches("[a-zA-Z]+");
+    }
+}
